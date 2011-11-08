@@ -1,0 +1,22 @@
+CustardPHP
+
+version: quick and dirty.
+
+---
+- views/helpers/demo_names.txt
+---
+  Replace the contents with your own names, if you like.
+
+---
+- views/helpers/demo_names.php
+---
+  Provides: (a) full (b) first (c) last.
+
+  Example 1 - random full name.
+    $this->DemoNames->full();
+
+  Example 2 - random first and last names, from the same line.
+    $i = rand(0, $this->DemoNames->count);
+    $this->DemoNames->first($i);
+    $this->DemoNames->last($i);
+
